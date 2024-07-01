@@ -1,0 +1,88 @@
+.skillall{
+    background: linear-gradient(to right, #000000, #1F0046);
+    /* background-color: black; */
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    margin-top: 60px;
+    color: white;
+    height: 370px;
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+.skillall h1{
+    font-size: 50px;
+}
+@property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes progress {
+   to { --progress-value: 94; }
+  }
+
+.wheel{
+    width: 140px;
+    height: 140px;
+    
+}
+
+.uiux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: 
+    radial-gradient(closest-side, rgb(0, 0, 0) 75%, transparent 80% 100%),
+    conic-gradient(#4901a0 calc(var(--progress-value) * 1%), #a45ff9 0);
+  animation: progress 2s 1 forwards;   
+  }
+  .wp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: 
+    radial-gradient(closest-side, rgb(0, 0, 0) 75%, transparent 80% 100%),
+    conic-gradient(#4901a0 calc(var(--progress-value) * 1%), #a45ff9 0);
+  animation: progress 2s 1 forwards;   
+  }
+  .rt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: 
+    radial-gradient(closest-side, rgb(0, 0, 0) 75%, transparent 80% 100%),
+    conic-gradient(#4901a0 calc(var(--progress-value) * 1%), #a45ff9 0);
+  animation: progress 2s 1 forwards;   
+  }
+  
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    animation: progress 2s 1 forwards;
+  }
+
+  .skilltxt p{
+    color: rgb(174, 173, 173);
+  }
+  .wheelmain{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    margin: auto;
+  }

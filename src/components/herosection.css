@@ -1,0 +1,176 @@
+
+.herosec{
+    color: white;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.heroimg img{
+    width: 400px;
+    
+}
+.portfoliodiv{
+    /* margin-bottom: 10px; */
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #31001E, #1F0046); /* Gradient background */
+    color: white; /* Text color */
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.portfoliodiv p {
+  
+    margin: 0; /* Remove default margin from the paragraph */
+    line-height: 35px; /* Ensure the line height matches the height of the div */
+}
+.herotxt h1{
+    width: 700px;
+    height: 150px;
+    font-size: 60px;
+    margin-top: 0;
+    
+}
+.typing-text {
+    color: #C82CC8; /* Purple color */
+  }
+  .herotxt p{
+    color: rgb(174, 173, 173);
+  }
+
+
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .heroimg img {
+    animation: float 3s ease-in-out infinite;
+    width: 100%;
+    max-width: 600px;
+  }
+ 
+  .letsconnect button{
+    color: white;
+    background: none;
+    display: flex ;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+  }
+.letsconnect img{
+    margin-left: 7px;
+width: 27px;
+height: 27px;
+}
+
+
+.letsconnect button:hover{
+    background-color: #af26af;
+}
+
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .herosec {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .herocontent {
+    margin-left: 0;
+  }
+
+  .herotxt h1 {
+    width: 100%;
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-bottom: 0px; 
+    height: 110px;
+  }
+
+  .portfoliodiv {
+    width: auto;
+    margin: 0 auto 20px; /* Center and add bottom margin */
+  }
+
+  .heroimg img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .letsconnectarrow h5 {
+    margin: 0; /* Remove default margin */
+  }
+
+  .letsconnectarrow img {
+    margin-left: 7px;
+    width: 27px;
+    height: 27px;
+  }
+
+  .letsconnect button:hover {
+    background-color: #af26af;
+  }
+  
+  .herotxt p{
+    margin-top: 0;
+    br {
+      display:none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .herotxt h1 {
+    font-size: 1.5rem; /* Adjust font size for very small screens */
+    margin-bottom: 0px;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify; /* Minimize space between heading and paragraph */
+  }
+  .heroimg img {
+    width: 100%;
+    margin-top: 20px;
+    
+  }
+  .herotxt p{
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    br {
+      display:none;
+    }
+  }
+  .letsconnect button {
+    /* text-align: start;  */
+    color: white;
+    margin-left: 20px;
+    background: none;
+    width: 140px; 
+    border-radius: 10px;
+  }
+  .letsconnect button:hover{
+    background-color: #C82CC8;
+  }
+  button :hover {
+    background-color: #af26af;
+  }
+}

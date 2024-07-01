@@ -1,0 +1,179 @@
+body {
+  background-image: url('E:\\react\\probsols\\images\\artistic-blurry-colorful-wallpaper-background.jpg'); /* Correct syntax */
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+.menu ul li a, .sidebar ul li a, .btn {
+  cursor: pointer;
+}
+.navv {
+  margin-top: 20px;
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  flex-grow: 1;
+  margin-left: 40px;
+}
+.logo img{
+  width: 250px;
+  height: 80px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+}
+
+.menu ul {
+  margin-top: 10px;
+}
+
+.menu li {
+  list-style: none;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu li:hover {
+  color: #C82CC8;
+}
+
+.btn {
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.default:hover {
+  background: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.close-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 8px 8px 32px;
+  text-align: left;
+}
+
+.sidebar ul li a {
+  color: white;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #C82CC8;
+}
+
+.sidebar.open {
+  width: 35%;
+}
+
+.sidebar.open .close-icon {
+  display: block;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .navv {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 0;
+    text-align: center;
+  }
+
+  .sidebar {
+    width: 0;
+    padding-top: 80px;
+  }
+
+  .sidebar.open {
+    width: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navv {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .menu-icon {
+    font-size: 25px;
+  }
+
+  .close-icon {
+    top: 10px;
+    right: 10px;
+  }
+}

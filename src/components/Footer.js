@@ -1,0 +1,57 @@
+import React from 'react';
+import './Footer.css';
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-logo">
+        <img src="origpink.png" alt="Probsols Logo" />
+        
+      </div>
+      <div className="footer-quote">
+        <p>"Your success, our commitment."</p>
+      </div>
+      <div className="footer-social">
+        <div className='icon-container'>
+          <div className='icondiv'>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <span>Facebook</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icondiv'>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <span>LinkedIn</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icondiv'>
+            <a href="https://fiverr.com" target="_blank" rel="noopener noreferrer">
+              {/* <i className="fab fa-fiverr"></i> */}
+              <h4>Up</h4>
+            </a>
+          </div>
+          <span>Upwork</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icondiv'>
+            <a href="https://fiverr.com" target="_blank" rel="noopener noreferrer">
+              {/* <i className="fab fa-fiverr"></i> */}
+              <h4>fi</h4>
+            </a>
+          </div>
+          <span>Fiverr</span>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>&copy; 2024 Probsols. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;

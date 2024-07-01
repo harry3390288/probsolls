@@ -1,0 +1,127 @@
+.aboutsec{
+    display: flex;
+    color: white;
+    justify-content: center;
+    justify-content: space-around;
+    border-color: white;
+    align-items: center;
+}  
+.aboutsec h1{
+    font-size: 50px;
+    color: #C82CC8;
+}  
+.aboutimg{
+    height: 500px;
+}
+.aboutimg img{
+    width: 400px;
+    height: 600px;
+    
+}
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .aboutimg img {
+    animation: float 3s ease-in-out infinite;
+    width: 100%;
+    max-width: 700px;
+  }
+  .aboutpara{
+    color: rgb(183, 183, 183);
+    margin-top: 0;
+  }
+  .aboutheading{
+    color: #C82CC8;
+    margin-bottom: 0;
+    font-size: 30px;
+
+  }
+  
+  .aboutsubheading{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+.aboutbutton button{
+  color: white;
+  background: none;
+  border: solid 1px;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+
+}
+
+
+
+  @media (max-width: 1024px) {
+    .about-content {
+      max-width: 70%; /* Adjust content width for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .aboutsec {
+      flex-direction: column; /* Stack elements vertically */
+      /* text-align: center; */
+    }
+  
+    .about-content {
+      max-width: 100%; /* Full width for content */
+      margin-bottom: 40px; /* Add space below content */
+    }
+  
+    .aboutimg {
+      height: auto; /* Allow image to scale with width */
+    }
+  
+    .aboutimg img {
+      max-width: 100%; /* Adjust image width for smaller screens */
+      height: auto; /* Ensure image maintains aspect ratio */
+      margin-top: 20px; /* Add space above image */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutsec h1 {
+      padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+      font-size: 2rem; /* Adjust font size for small screens */
+    }
+    .aboutsubheading{
+      padding-left: 20px;
+    padding-right: 20px;
+    text-align: start;
+    /* text-align: justify; */
+
+    }
+  
+    .aboutsec p {
+      br{
+        display: none;
+      }
+      text-align: start;
+      padding-left: 20px;
+    padding-right: 20px;
+    /* text-align: justify; */
+      font-size: 0.9rem; /* Adjust font size for small screens */
+    }
+  
+    .aboutimg img {
+      max-width: 300px; /* Further adjust image width for very small screens */
+    }
+    .aboutbutton button{
+      margin-left: 20px;
+    }
+  }

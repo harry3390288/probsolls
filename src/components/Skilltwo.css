@@ -1,0 +1,76 @@
+.skillmain {
+    color: white;
+  }
+  
+  .skillall{
+    background: linear-gradient(to right, #000000, #1F0046);
+    /* background-color: black; */
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    margin-top: 60px;
+    color: white;
+    height: 400px;
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+.skillall h1{
+    font-size: 50px;
+}
+  
+  .skilltxt p {
+    margin-bottom: 20px;
+  }
+  
+  .wheelmain {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 65%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  .wheel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .wheel label {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  .CircularProgressbar-path {
+    stroke: #4901a0;
+  }
+  
+  .CircularProgressbar-trail {
+    stroke: #a45ff9;
+  }
+  
+  .CircularProgressbar-text {
+    fill: white;
+    font-size: 16px; /* Adjust text size as needed */
+  }
+  
+  .CircularProgressbar-background {
+    fill: black;
+  }
+  .CircularProgressbar {
+    width: 50%;
+    vertical-align: middle;
+}
+
+  
+@media (max-width: 1024px) {
+  .skilltxt{
+    br{
+      display: none;
+    }
+  }
+}
