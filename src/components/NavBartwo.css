@@ -1,5 +1,5 @@
 body {
-  background-image: url('E:\\react\\probsols\\images\\artistic-blurry-colorful-wallpaper-background.jpg'); /* Correct syntax */
+  background-image: url('E:\\react\\probsols\\images\\artistic-blurry-colorful-wallpaper-background.jpg'); 
   background-size: cover; 
   background-repeat: no-repeat; 
 }
@@ -123,6 +123,7 @@ a {
 
 .sidebar.open .close-icon {
   display: block;
+  color: white;
 }
 
 /* Media Queries for Mobile View */
@@ -171,7 +172,7 @@ a {
   .menu-icon {
     font-size: 25px;
   }
-
+  
   .close-icon {
     top: 10px;
     right: 10px;

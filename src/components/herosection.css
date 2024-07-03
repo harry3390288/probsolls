@@ -85,6 +85,52 @@ height: 27px;
 
 
 /* Adjustments for small screens */
+@media (max-width:1350px){
+  .herosec {
+    padding: 0 20px;
+}
+
+}
+
+
+@media (max-width: 1024px){
+  .ab{
+    padding: 0 12px;
+  }
+  .herosec{
+    flex-direction: column;
+  }
+  .heroimg img {
+    
+    width: 100%;
+    margin-top: 20px;
+  }
+  .portfoliodiv {
+    width: auto;
+    margin: 0 auto 20px; /* Center and add bottom margin */
+  }
+  .herotxt p {
+    color: rgb(174, 173, 173);
+    width: auto;
+}
+.herotxt h1 {
+  /* width: 700px; */
+  width: auto;
+  height: 150px;
+  font-size: 60px;
+  margin-top: 0;
+}
+.heroimg{
+  margin: auto;
+}
+.herotxt p{
+  br{
+    display: none;
+  }
+}
+
+}
+
 @media (max-width: 768px) {
   .herosec {
     margin-top: 40px;
@@ -102,6 +148,9 @@ height: 27px;
     font-size: 2rem; /* Adjust font size for smaller screens */
     margin-bottom: 0px; 
     height: 110px;
+    
+        text-align: left;
+        text-align: justify;
   }
 
   .portfoliodiv {
@@ -110,7 +159,7 @@ height: 27px;
   }
 
   .heroimg img {
-    width: 80%;
+    width: 100%;
     margin-top: 20px;
   }
 
@@ -130,9 +179,14 @@ height: 27px;
   
   .herotxt p{
     margin-top: 0;
+    text-align: justify;
+        
     br {
       display:none;
     }
+  }
+  .ab{
+    padding: 0 12px;
   }
 }
 
@@ -141,8 +195,8 @@ height: 27px;
     font-size: 1.5rem; /* Adjust font size for very small screens */
     margin-bottom: 0px;
     height: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
     text-align: justify; /* Minimize space between heading and paragraph */
   }
   .heroimg img {
@@ -152,8 +206,8 @@ height: 27px;
   }
   .herotxt p{
     margin-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
     text-align: justify;
     br {
       display:none;
@@ -162,7 +216,7 @@ height: 27px;
   .letsconnect button {
     /* text-align: start;  */
     color: white;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     background: none;
     width: 140px; 
     border-radius: 10px;
@@ -172,5 +226,8 @@ height: 27px;
   }
   button :hover {
     background-color: #af26af;
+  }
+  .ab{
+    padding: 0 12px;
   }
 }

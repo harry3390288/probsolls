@@ -55,16 +55,16 @@ const WorkSection = () => {
       title: "WordPress",
       subtitle: "Wordpress Development of Castle&Co",
       videoSrc: "castleco.mp4",
-      description: "Description for WordPress project.",
-      client: "Client B",
+      description: "For this project, We collaborated with Christian, a client based in United States, to develop the wordpress site for Castel&Co, an innovative e-commerce app. Castle&Co is a platform that facilitates the seamless selling of Rugs, aiming to provide users with an intuitive and efficient shopping experience.",
+      client: "Chritian, United States ",
       tools: "WordPress, PHP",
       imageSrc: "wordpress.png",
-      link: "http://example.com"
+      link: "https://castelandco.com.au/"
     },
     {
       title: "React.js",
-      subtitle: "Dynamic Web Applications",
-      videoSrc: "ui.mp4",
+      subtitle: "React.js Development of Probsolz",
+      videoSrc: "probsolz.mp4",
       description: "Description for React.js project.",
       client: "Client C",
       tools: "React, JavaScript",

@@ -35,7 +35,7 @@ export default function Herosection() {
   return (
     <div>
       <div className='herosec'>
-        <div className='ab'>
+        <div className='ab heroo'>
           <div className='portfoliodiv'><p>Welcome to our Portfolio</p></div>
           <div className='herotxt'>
             <h1>Hi! We are Probsols, <br />a <span className="typing-text"><b>{displayedText}</b></span></h1>

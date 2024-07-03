@@ -32,7 +32,7 @@ export default function About() {
                     </p>
                     <div className='aboutbutton'><button>Explore</button></div>
             </div>
-            <div>
+            <div className='abtimg'>
             <div className='aboutimg'><img src="aboutsecimg.png" alt="Hero" /></div>
             </div>
         </div>

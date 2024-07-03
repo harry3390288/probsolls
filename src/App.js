@@ -14,6 +14,7 @@ import WorkMain from './components/WorkMain'; // Import WorkMain component
 import Detail from './components/Detail'; // Import WorkMain component
 import ScrollToTop from './components/ScrollToTop';
 
+
 function Home() {
   return (
     <>
