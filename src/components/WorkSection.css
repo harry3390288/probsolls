@@ -1,160 +1,167 @@
 /* General styling for the work section */
 .work-section {
-    text-align: center;
-    padding: 20px;
-    color: white;
-    margin-top: 40px;
-  }
-  .work-section hr{
-    width: 70%;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-  /* Styling for the main heading */
-  .work-heading {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
+  text-align: center;
+  padding: 20px;
+  color: white;
+  margin-top: 40px;
+}
+.work-section hr {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/* Styling for the main heading */
+.work-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Flexbox setup for each work item */
+.work-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  width: 940px;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Alternating the order of items in reverse rows */
+.work-item.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Styling for the title within each work item */
+.work-title {
+  font-size: 2.5rem;
+  flex: 1;
+  display: block;
+  margin-bottom: 0;
+}
+
+/* Ensuring right-aligned text for reversed items */
+.work-item.reverse .work-title {
+  flex: 1;
+}
+
+/* Styling for the video container */
+.work-video {
+  margin: 0 20px;
+  position: relative;
+  flex: 1;
+}
+
+/* Video styling */
+.work-video video {
+  width: 550px;
+  height: 300px;
   
-  /* Flexbox setup for each work item */
-  .work-item {
+  transition: transform 0.3s;
+  object-fit: cover;
+}
+
+/* Hover effect for video */
+.work-video video:hover {
+  transform: scale(1.1);
+}
+
+/* Play button styling */
+.play-button {
+  display: none; /* Hide play button by default */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .work-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+  }
+  .work-item {
+    width: 100%; /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .work-item {
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    width: 840px;
-    margin: auto;
-    cursor: pointer;
+    text-align: center;
   }
-  
-  /* Alternating the order of items in reverse rows */
-  .work-item.reverse {
-    flex-direction: row-reverse;
-  }
-  
-  /* Styling for the title within each work item */
-  .work-title {
-    font-size: 2.5rem;
-    flex: 1;
-    display: block;
-    margin-bottom: 0;
-    
-  }
-  
-  /* Ensuring right-aligned text for reversed items */
-  .work-item.reverse .work-title {
-    flex: 1;
-  }
-  
-  /* Styling for the video container */
+
   .work-video {
-    flex: 1;
-    
+    order: -1; /* Ensure video always comes first in the column layout */
   }
-  
-  /* Ensuring left-aligned text for reversed video containers */
-  /* .work-item.reverse .work-video {
-    
-  } */
-  
-  /* Video styling */
-  .work-video video {
-    width: 550px;
-    height: 300px;
-    
-    transition: transform 0.3s;
-    object-fit: cover;
+
+  .work-title {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
   }
-  
-  /* Hover effect for video */
-  .work-video video:hover {
-    transform: scale(1.1);
-  }
+
   .work-subtitle {
-    font-size: 1rem;
-    color: #aaa;
-    margin-top: 0.5rem; /* Adjust as needed for spacing */
-    display: block; /* Ensure the subtitle is a block element */
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .workbutton button{
-    color: white;
-    background: none;
-    border-radius: 10px;
-    border: solid 1px;
-    width: 120px;
-    height: 40px;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 
- 
+  .work-video video {
+    width: 80%; /* Adjust video width for smaller screens */
+    max-width: 100%; /* Ensure video stays within container */
+    margin-top: 20px; /* Adjust spacing */
+  }
 
-  /* Media queries for responsiveness */
-  @media (max-width: 1024px) {
-    .worksection{
-      display: flex;
-      flex-direction: column;
-    }
-    .work-item {
-      width: 90%; /* Adjust width for medium screens */
-    }
+  .work-item.reverse {
+    display: flex;
+    flex-direction: column;
   }
-  
-  @media (max-width: 768px) {
-    .work-item {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .work-video {
-      order: -1; /* Ensure video always comes first in the column layout */
-    }
-  
-    .work-title {
-      font-size: 2.5rem; /* Adjust font size for smaller screens */
-    }
-  
-    .work-subtitle {
-      font-size: 0.9rem; /* Adjust font size for smaller screens */
-    }
-  
-    .work-video video {
-      width: 80%; /* Adjust video width for smaller screens */
-      max-width: 100%; /* Ensure video stays within container */
-      margin-top: 20px; /* Adjust spacing */
-    }
-    .work-item.reverse{
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .worksection{
-      display: flex;
-      flex-direction: column;
-      
-    }
+
+  /* Show play button on mobile screens */
+  .play-button {
+    display: block;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
-    .work-title {
-      font-size: 2.5rem; /* Adjust font size for very small screens */
-    }
-  
-    .work-subtitle {
-      font-size: 0.9rem; /* Adjust font size for very small screens */
-    }
-  
-    .work-video video {
-      width: 420px;
-      height: 240px;
-      max-width: 300px; /* Further adjust maximum width for very small screens */
-    }
-    .work-item.reverse{
-      display: flex;
-      flex-direction: column;
-    }
-  
   }
+}
+
+@media (max-width: 480px) {
+  .work-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-title {
+    font-size: 2.5rem; /* Adjust font size for very small screens */
+  }
+
+  .work-subtitle {
+    font-size: 0.9rem; /* Adjust font size for very small screens */
+  }
+
+  .work-video video {
+    width: 100%;
+    height: auto;
+  }
+
+  .work-item.reverse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Show play button on very small screens */
+  .play-button {
+    display: block;
+  }
+}
