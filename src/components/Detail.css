@@ -1,182 +1,77 @@
-
-.menu ul li a, .sidebar ul li a, .btn {
-  cursor: pointer;
-}
-.navv {
-  margin-top: 20px;
-  height: 80px;
+.detail-container {
+  display: flex;
   color: white;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.txtimg {
+  display: flex;
+  
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Add this to allow wrapping on smaller screens */
+}
+
+.text-content {
+  max-width: 80%;
+  padding: 20px;
+}
+.detailvideo video{
+  width: 650px;
+  height: 400px;
+}
+
+.clienttxt {
+  width: 280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
 }
-
-.logo {
-  flex-grow: 1;
-  margin-left: 40px;
+.detaildes{
+  color: rgb(173, 173, 173);
 }
-.logo img {
-  width: 250px;
-  height: 80px;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  margin-right: 0px;
-}
-
-.menu ul {
-  margin-top: 10px;
-}
-
-.menu li {
-  list-style: none;
-  display: inline;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.menu li:hover {
+.detailtitle{
   color: #C82CC8;
-}
-
-.btn {
-  border: 1px solid white;
-  color: white;
-  padding: 5px 10px;
-  font-size: 15px;
-  cursor: pointer;
-  background: transparent;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.default:hover {
-  background: white;
-  color: black;
-  border: 1px solid white;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.close-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  z-index: 1;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  padding: 8px 8px 8px 32px;
-  text-align: left;
-}
-
-.sidebar ul li a {
-  color: white;
   font-size: 25px;
-  display: block;
-  transition: 0.3s;
+  margin-bottom: 0px;
+}
+.detailsub{
+  margin-top: 0px;
+}
+hr{
+  text-align: left;
+  margin-left: 0px;
+  width: 40%;
 }
 
-.sidebar ul li a:hover {
-  color: #C82CC8;
-}
-
-.sidebar.open {
-  width: 35%;
-}
-
-.sidebar.open .close-icon {
-  display: block;
-  color: white;
-}
-
-/* Media Queries for Mobile View */
+/* Media query for tablets */
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .btn {
-    display: none;
-  }
-
-  .navv {
-    justify-content: space-between;
-  }
-
-  .logo {
-    margin: 0;
-    text-align: center;
-  }
-
-  .sidebar {
-    width: 0;
-    padding-top: 80px;
-  }
-
-  .sidebar.open {
-    width: 35%;
-  }
-
-  /* Hide letsconnect button in sidebar */
-  .sidebar .btn {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .navv {
+  .text-content, .detailimg {
+    max-width: 100%;
     padding: 10px;
   }
 
-  .btn {
-    padding: 8px;
-    font-size: 14px;
+  .clienttxt {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .text-content, .detailimg {
+    max-width: 100%;
+    padding: 10px;
   }
 
-  .menu-icon {
-    font-size: 25px;
+  .clienttxt {
+    width: 100%;
+    justify-content: space-between;
   }
-  
-  .close-icon {
-    top: 10px;
-    right: 10px;
-    color: white;
+
+  .txtimg {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

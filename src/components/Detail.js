@@ -25,7 +25,7 @@ export default function Detail() {
     <div className='detail-container'>
       <div className='txtimg'>
         <div className='text-content'>
-          <h3 className='detailtitle'>{title}</h3>
+          <p className='detailtitle'>{title}</p>
           <h1 className='detailsub'>{subtitle}</h1>
           <p className='detaildes'>{description}</p>
           <br /><br />

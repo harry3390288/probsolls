@@ -88,7 +88,7 @@ height: 27px;
 
 @media (max-width: 1024px){
   .ab{
-    padding: 0 12px;
+    padding: 0 20;
   }
   .herosec{
     flex-direction: column;
@@ -178,7 +178,7 @@ height: 27px;
     }
   }
   .ab{
-    padding: 0 12px;
+    padding: 0 20px;
   }
 }
 
