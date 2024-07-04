@@ -18,9 +18,11 @@ export default function NavBartwo() {
     <div>
       <div className='navv'>
         <div className='menu-icon' onClick={toggleMenu}>
-          {isMenuOpen ? '✕' : '☰'}
+          {isMenuOpen ? <span className="close-icon">✕</span> : '☰'}
         </div>
-        <div className='logo'><Link to='/'><img src='purple5@4x.png' alt="Logo" /></Link></div>
+        <div className='logo'>
+          <Link to='/'><img src='purple5@4x.png' alt="Logo" /></Link>
+        </div>
         <div className='menu'>
           <ul>
             <li><Link to="/" onClick={closeMenu}>Home</Link></li>
@@ -31,11 +33,11 @@ export default function NavBartwo() {
         <button className="btn default">Let's Connect</button>
       </div>
       <div className={`sidebar ${isMenuOpen ? 'open' : ''}`}>
+        <span className="close-icon" onClick={closeMenu}>✕</span>
         <ul>
           <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><ScrollLink to="work" smooth={true} duration={500} onClick={closeMenu}>Work</ScrollLink></li>
           <li><ScrollLink to="about" smooth={true} duration={500} onClick={closeMenu}>About</ScrollLink></li>
-          <li><Link to="/connect" onClick={closeMenu}>Let's Connect</Link></li>
         </ul>
       </div>
     </div>
