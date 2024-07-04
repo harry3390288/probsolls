@@ -47,9 +47,16 @@ hr{
 
 /* Media query for tablets */
 @media (max-width: 768px) {
+  .detail-container{
+    flex-direction: column;
+  }
   .text-content, .detailimg {
     max-width: 100%;
     padding: 10px;
+  }
+  .detailvideo video{
+    width: 350px;
+    height: 240px;
   }
 
   .clienttxt {
