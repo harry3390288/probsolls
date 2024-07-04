@@ -92,7 +92,7 @@ const WorkSection = () => {
           onClick={() => handleItemClick(item)}
         />
       ))}
-      <div className='workbutton'><button onClick={() => navigate('/work-main')}>View More</button></div>
+      <div className='workbutton'><button  onClick={() => navigate('/work-main')}>View More</button></div>
     </div>
   );
 };

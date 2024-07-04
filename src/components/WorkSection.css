@@ -83,6 +83,14 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+.workbutton button{
+  background: transparent;
+  color: white;
+  border: solid 1px;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
 
 /* Media queries for responsiveness */
 @media (max-width: 1024px) {
@@ -128,12 +136,9 @@
   /* Show play button on mobile screens */
   .play-button {
     display: block;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     
   }
+  
 }
 
 @media (max-width: 480px) {
