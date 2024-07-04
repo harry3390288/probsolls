@@ -32,6 +32,7 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, onClick }) => {
           ref={videoRef}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          playsinline
         />
       </div>
     </div>

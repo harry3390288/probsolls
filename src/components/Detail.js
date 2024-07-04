@@ -38,7 +38,7 @@ export default function Detail() {
         </div>
         
     </div>
-    <div className='detailvideo'><video src={videoSrc} controls /></div>
+    <div className='detailvideo'><video src={videoSrc} controls playsinline/></div>
   </div>
   );
 }
