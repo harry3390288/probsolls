@@ -1,7 +1,8 @@
 body {
-  background-image: url('E:\\react\\probsols\\images\\artistic-blurry-colorful-wallpaper-background.jpg'); 
+  /* background-image: url('E:\\react\\probsols\\images\\artistic-blurry-colorful-wallpaper-background.jpg'); 
   background-size: cover; 
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;  */
+  background-color: #13022E;
 }
 .menu ul li a, .sidebar ul li a, .btn {
   cursor: pointer;

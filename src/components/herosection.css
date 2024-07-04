@@ -184,7 +184,7 @@ height: 27px;
 
 @media (max-width: 480px) {
   .ab{
-    padding: 0 12px;
+    padding: 0 20px;
   }
   .herotxt h1 {
     font-size: 1.5rem; /* Adjust font size for very small screens */
