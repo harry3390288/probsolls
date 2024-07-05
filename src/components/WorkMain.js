@@ -19,8 +19,8 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, onClick }) => {
   };
 
   return (
-    <div className={`work-item ${reverse ? 'reverse' : ''}`} onClick={onClick}>
-      <div className='text-container'>
+    <div className={`work-item ${reverse ? 'reverse' : ''}`} >
+      <div className='text-container' onClick={onClick}>
         <h3 className='work-title'>{title}</h3>
         <h4 className='work-subtitle'>{subtitle}</h4>
       </div>
