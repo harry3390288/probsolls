@@ -54,15 +54,14 @@ hr{
     max-width: 100%;
     /* padding: 10px; */
   }
-  .detailvideo{
-    width: 320px;
+  .detailvideo{margin: auto;
+    width: 340px;
     height: 240px;
     text-align: center;
   }
   .detailvideo video{
-    width: 320px;
+    width: 340px;
     height: 240px;
-    margin: auto;
   }
 
   .clienttxt {
