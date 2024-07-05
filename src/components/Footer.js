@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-social">
         <div className='icon-container'>
           <div className='icondiv'>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61561750404064" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
           </div>
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className='icon-container'>
           <div className='icondiv'>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/probsolz-web-solution-aa360a316" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin-in"></i>
             </a>
           </div>

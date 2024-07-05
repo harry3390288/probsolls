@@ -91,6 +91,10 @@
   width: 80px;
   height: 40px;
 }
+.text-container:hover{
+  color: #C82CC8;
+
+}
 
 /* Media queries for responsiveness */
 @media (max-width: 1024px) {

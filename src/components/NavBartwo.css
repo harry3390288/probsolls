@@ -63,9 +63,9 @@ a {
 }
 
 .default:hover {
-  background: white;
-  color: black;
-  border: 1px solid white;
+  background: #C82CC8;
+  color: rgb(254, 254, 254);
+  border: 1px solid #C82CC8;
 }
 
 .menu-icon {

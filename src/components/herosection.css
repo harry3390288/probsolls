@@ -70,7 +70,8 @@
     width: 140px;
     height: 40px;
     border-radius: 10px;
-    border-style: none;
+    border-style: solid 0.5px;
+    border-color: white;
   }
 .letsconnect img{
     margin-left: 7px;
@@ -80,7 +81,7 @@ height: 27px;
 
 
 .letsconnect button:hover{
-    background-color: #af26af;
+    background-color: #C82CC8;
 }
 
 
