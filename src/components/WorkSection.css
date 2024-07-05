@@ -71,6 +71,8 @@
 
 /* Play button styling */
 .play-button {
+  width: 100px;
+  height: 100px;
   display: none; /* Hide play button by default */
   position: absolute;
   top: 50%;
@@ -78,8 +80,6 @@
   transform: translate(-50%, -50%);
   font-size: 3rem;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
   padding: 10px 20px;
   cursor: pointer;
 }
@@ -127,7 +127,7 @@
   }
 
   .work-video video {
-    width: 80%; /* Adjust video width for smaller screens */
+    width: 100%; 
     max-width: 100%; /* Ensure video stays within container */
     margin-top: 20px; /* Adjust spacing */
   }

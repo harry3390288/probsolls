@@ -1,15 +1,23 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState } from 'react';
 import './WorkSection.css';
 import { useNavigate } from 'react-router-dom';
 
 const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
   const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const handlePlayVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }}
 
   const handleMouseEnter = () => {
     if (videoRef.current) {
       videoRef.current.play();
+      
     }
   };
+  
 
   const handleMouseLeave = () => {
     if (videoRef.current) {
@@ -34,7 +42,15 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
           onMouseLeave={handleMouseLeave}
           playsinline
           poster={poster}
+          className={isPlaying ? 'playing' : ''}
+          onClick={handlePlayVideo}
+          controls={isPlaying}
         />
+        {!isPlaying && (
+          <div className="play-button" onClick={handlePlayVideo}>
+            
+          </div>
+        )}
       </div>
     </div>
   );
