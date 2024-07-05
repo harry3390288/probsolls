@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './WorkSection.css';
 import { useNavigate } from 'react-router-dom';
 
-const WorkItem = ({ title, subtitle, videoSrc, reverse, onClick }) => {
+const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
   const videoRef = useRef(null);
 
   const handleMouseEnter = () => {
@@ -33,6 +33,7 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, onClick }) => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           playsinline
+          poster={poster}
         />
       </div>
     </div>
@@ -50,7 +51,8 @@ const WorkSection = () => {
       client: "Roland, Nigeria",
       tools: "Figma",
       imageSrc: "teamwork.png",
-      link: "https://www.figma.com/design/mgEQ62g97xjVnrC0nwjU6h/Barnvest?node-id=0-1&t=HtZb4aQLHpVRYBnV-1"
+      link: "https://www.figma.com/design/mgEQ62g97xjVnrC0nwjU6h/Barnvest?node-id=0-1&t=HtZb4aQLHpVRYBnV-1",
+      poster:"barnvestthumb.png"
     },
     {
       title: "WordPress",
@@ -60,7 +62,8 @@ const WorkSection = () => {
       client: "Chritian, United States ",
       tools: "WordPress, PHP",
       imageSrc: "wordpress.png",
-      link: "https://castelandco.com.au/"
+      link: "https://castelandco.com.au/",
+      poster:"barnvestthumb.png"
     },
     {
       title: "React.js",
@@ -70,7 +73,8 @@ const WorkSection = () => {
       client: "Client C",
       tools: "React, JavaScript",
       imageSrc: "react.png",
-      link: "http://example.com"
+      link: "http://example.com",
+      poster:"barnvestthumb.png"
     }
   ];
 
@@ -90,6 +94,7 @@ const WorkSection = () => {
           videoSrc={item.videoSrc}
           reverse={index % 2 !== 0}
           onClick={() => handleItemClick(item)}
+          poster={item.poster}
         />
       ))}
       <div className='workbutton'><button  onClick={() => navigate('/work-main')}>View More</button></div>
