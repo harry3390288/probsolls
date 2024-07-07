@@ -30,7 +30,7 @@ export default function About() {
                     Explore how Probsolz can elevate your business with innovative<br/>
                     digital solutions tailored to your needs.
                     </p>
-                    <div className='aboutbutton'><button>Explore</button></div>
+                    <a href='https://www.upwork.com/freelancers/~01dcf054e52fdc82e0'  target="_blank" rel="noopener noreferrer"><div className='aboutbutton'><button>Explore</button></div></a>
             </div>
             <div className='abtimg'>
             <div className='aboutimg'><img src="aboutsecimg.png" alt="Hero" /></div>

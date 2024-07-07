@@ -30,7 +30,7 @@ export default function NavBartwo() {
             <li><ScrollLink to="about" smooth={true} duration={500} onClick={closeMenu}>About</ScrollLink></li>
           </ul>
         </div>
-        <button className="btn default">Let's Connect</button>
+        <a href='https://www.upwork.com/freelancers/~01dcf054e52fdc82e0' target="_blank" rel="noopener noreferrer"><button className="btn default">Let's Connect</button></a>
       </div>
       <div className={`sidebar ${isMenuOpen ? 'open' : ''}`}>
         <span className="close-icon" onClick={closeMenu}>✕</span>

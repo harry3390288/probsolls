@@ -47,7 +47,7 @@ export default function Herosection() {
               into reality with creativity and excellence.<br/><br/>
                Let's create something amazing together!</p>
 
-               <div className='letsconnect'><button><b>Let's Connect</b><img src='arrow.png' alt="Arrow"/></button></div>
+               <div className='letsconnect'><a href='https://www.upwork.com/freelancers/~01dcf054e52fdc82e0' target="_blank" rel="noopener noreferrer"><button><b>Let's Connect</b><img src='arrow.png' alt="Arrow"/></button></a></div>
           </div>
         </div>
         <div className='heroimg'><img src="Untitled-1.png" alt="Hero" /></div>

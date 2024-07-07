@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div className='icon-container'>
           <div className='icondiv'>
-            <a href="https://fiverr.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.upwork.com/freelancers/~01dcf054e52fdc82e0" target="_blank" rel="noopener noreferrer">
               {/* <i className="fab fa-fiverr"></i> */}
               <h4>Up</h4>
             </a>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
         <div className='icon-container'>
           <div className='icondiv'>
-            <a href="https://fiverr.com" target="_blank" rel="noopener noreferrer">
+            <a  href='https://www.fiverr.com/harisaslam242?up_rollout=true' target="_blank" rel="noopener noreferrer">
               {/* <i className="fab fa-fiverr"></i> */}
               <h4>fi</h4>
             </a>

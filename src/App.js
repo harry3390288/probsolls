@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import NavBartwo from './components/NavBartwo';
 import Herosection from './components/Herosection';
 import WorkSection from './components/WorkSection';
@@ -13,6 +12,7 @@ import Skilltwo from './components/Skilltwo';
 import WorkMain from './components/WorkMain'; // Import WorkMain component
 import Detail from './components/Detail'; // Import WorkMain component
 import ScrollToTop from './components/ScrollToTop';
+  
 
 
 function Home() {
