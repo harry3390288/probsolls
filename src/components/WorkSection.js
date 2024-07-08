@@ -67,7 +67,7 @@ const WorkSection = () => {
       tools: "Figma",
       imageSrc: "teamwork.png",
       link: "https://www.figma.com/design/mgEQ62g97xjVnrC0nwjU6h/Barnvest?node-id=0-1&t=HtZb4aQLHpVRYBnV-1",
-      poster: `${process.env.PUBLIC_URL}/barnvestthumb.png`
+      poster: `${process.env.PUBLIC_URL}barnvestthumb.png`
     },
     {
       title: "WordPress",
@@ -78,7 +78,7 @@ const WorkSection = () => {
       tools: "WordPress, PHP",
       imageSrc: "wordpress.png",
       link: "https://castelandco.com.au/",
-      poster: `${process.env.PUBLIC_URL}/castelandcothumb.png`
+      poster: `${process.env.PUBLIC_URL}castelandcothumb.png`
     },
     {
       title: "React.js",
@@ -89,7 +89,7 @@ const WorkSection = () => {
       tools: "React, JavaScript",
       imageSrc: "react.png",
       link: "http://example.com",
-      poster: `${process.env.PUBLIC_URL}/probthumb.png`
+      poster: `${process.env.PUBLIC_URL}probthumb.png`
     }
   ];
 
