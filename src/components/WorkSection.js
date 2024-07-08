@@ -1,23 +1,23 @@
-import React, { useRef,useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './WorkSection.css';
 import { useNavigate } from 'react-router-dom';
 
 const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+
   const handlePlayVideo = () => {
     if (videoRef.current) {
       videoRef.current.play();
       setIsPlaying(true);
-    }}
+    }
+  };
 
   const handleMouseEnter = () => {
     if (videoRef.current) {
       videoRef.current.play();
-      
     }
   };
-  
 
   const handleMouseLeave = () => {
     if (videoRef.current) {
@@ -27,7 +27,7 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
   };
 
   return (
-    <div className={`work-item ${reverse ? 'reverse' : ''}`} >
+    <div className={`work-item ${reverse ? 'reverse' : ''}`}>
       <div className='text-container' onClick={onClick}>
         <h3 className='work-title'>{title}</h3>
         <h4 className='work-subtitle'>{subtitle}</h4>
@@ -48,7 +48,6 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
         />
         {!isPlaying && (
           <div className="play-button" onClick={handlePlayVideo}>
-            
           </div>
         )}
       </div>
@@ -68,18 +67,18 @@ const WorkSection = () => {
       tools: "Figma",
       imageSrc: "teamwork.png",
       link: "https://www.figma.com/design/mgEQ62g97xjVnrC0nwjU6h/Barnvest?node-id=0-1&t=HtZb4aQLHpVRYBnV-1",
-      poster:process.env.PUBLIC_URL + "barnvestthumb.png"
+      poster: `${process.env.PUBLIC_URL}/barnvestthumb.png`
     },
     {
       title: "WordPress",
       subtitle: "Wordpress Development of Castle&Co",
       videoSrc: "Castleco2.mp4",
       description: "For this project, We collaborated with Christian, a client based in United States, to develop the wordpress site for Castel&Co, an innovative e-commerce app. Castle&Co is a platform that facilitates the seamless selling of Rugs, aiming to provide users with an intuitive and efficient shopping experience.",
-      client: "Chritian, United States ",
+      client: "Christian, United States",
       tools: "WordPress, PHP",
       imageSrc: "wordpress.png",
       link: "https://castelandco.com.au/",
-      poster:process.env.PUBLIC_URL + "castelandcothumb.png"
+      poster: `${process.env.PUBLIC_URL}/castelandcothumb.png`
     },
     {
       title: "React.js",
@@ -90,7 +89,7 @@ const WorkSection = () => {
       tools: "React, JavaScript",
       imageSrc: "react.png",
       link: "http://example.com",
-      poster:process.env.PUBLIC_URL + "probthumb.png"
+      poster: `${process.env.PUBLIC_URL}/probthumb.png`
     }
   ];
 
@@ -113,7 +112,7 @@ const WorkSection = () => {
           poster={item.poster}
         />
       ))}
-      <div className='workbutton'><button  onClick={() => navigate('/work-main')}>View More</button></div>
+      <div className='workbutton'><button onClick={() => navigate('/work-main')}>View More</button></div>
     </div>
   );
 };
