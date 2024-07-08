@@ -62,7 +62,7 @@ const WorkSection = () => {
     {
       title: "UI/UX",
       subtitle: "User Interface of BarnVest App",
-      videoSrc: "Barnvest.mp4",
+      videoSrc: "Barnvest2.mp4",
       description: "For this project, We collaborated with Roland, a client based in Nigeria, to design the user interface for Barnvest, an innovative e-commerce app. Barnvest is a platform that facilitates the seamless buying and selling of goods, aiming to provide users with an intuitive and efficient shopping experience.",
       client: "Roland, Nigeria",
       tools: "Figma",
@@ -73,24 +73,24 @@ const WorkSection = () => {
     {
       title: "WordPress",
       subtitle: "Wordpress Development of Castle&Co",
-      videoSrc: "castleco.mp4",
+      videoSrc: "castleco2.mp4",
       description: "For this project, We collaborated with Christian, a client based in United States, to develop the wordpress site for Castel&Co, an innovative e-commerce app. Castle&Co is a platform that facilitates the seamless selling of Rugs, aiming to provide users with an intuitive and efficient shopping experience.",
       client: "Chritian, United States ",
       tools: "WordPress, PHP",
       imageSrc: "wordpress.png",
       link: "https://castelandco.com.au/",
-      poster:"barnvestthumb.png"
+      poster:"castelcothumb.png"
     },
     {
       title: "React.js",
       subtitle: "React.js Development of Probsolz",
-      videoSrc: "probsolz.mp4",
+      videoSrc: "probsolz2.mp4",
       description: "Description for React.js project.",
       client: "Client C",
       tools: "React, JavaScript",
       imageSrc: "react.png",
       link: "http://example.com",
-      poster:"barnvestthumb.png"
+      poster:"probsolzthumb.png"
     }
   ];
 
