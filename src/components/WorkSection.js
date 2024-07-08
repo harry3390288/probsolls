@@ -40,7 +40,7 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
           ref={videoRef}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          playsinline
+          playsInline
           poster={poster}
           className={isPlaying ? 'playing' : ''}
           onClick={handlePlayVideo}
@@ -68,7 +68,7 @@ const WorkSection = () => {
       tools: "Figma",
       imageSrc: "teamwork.png",
       link: "https://www.figma.com/design/mgEQ62g97xjVnrC0nwjU6h/Barnvest?node-id=0-1&t=HtZb4aQLHpVRYBnV-1",
-      poster:"barnvestthumb.png"
+      poster:process.env.PUBLIC_URL + "barnvestthumb.png"
     },
     {
       title: "WordPress",
@@ -79,7 +79,7 @@ const WorkSection = () => {
       tools: "WordPress, PHP",
       imageSrc: "wordpress.png",
       link: "https://castelandco.com.au/",
-      poster:"castelandcothumb.png"
+      poster:process.env.PUBLIC_URL + "castelandcothumb.png"
     },
     {
       title: "React.js",
@@ -90,7 +90,7 @@ const WorkSection = () => {
       tools: "React, JavaScript",
       imageSrc: "react.png",
       link: "http://example.com",
-      poster:"probthumb.png"
+      poster:process.env.PUBLIC_URL + "probthumb.png"
     }
   ];
 

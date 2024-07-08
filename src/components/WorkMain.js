@@ -40,7 +40,7 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
           ref={videoRef}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          playsinline
+          playsInline
           poster={poster}
           className={isPlaying ? 'playing' : ''}
           onClick={handlePlayVideo}
