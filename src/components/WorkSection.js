@@ -79,7 +79,7 @@ const WorkSection = () => {
       tools: "WordPress, PHP",
       imageSrc: "wordpress.png",
       link: "https://castelandco.com.au/",
-      poster:"castelcothumb.png"
+      poster:"castelandcothumb.png"
     },
     {
       title: "React.js",
@@ -90,7 +90,7 @@ const WorkSection = () => {
       tools: "React, JavaScript",
       imageSrc: "react.png",
       link: "http://example.com",
-      poster:"probsolzthumb.png"
+      poster:"probthumb.png"
     }
   ];
 
