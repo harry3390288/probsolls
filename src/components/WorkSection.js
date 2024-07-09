@@ -68,7 +68,7 @@ const WorkSection = () => {
       tools: "Figma",
       imageSrc: "teamwork.png",
       link: "https://www.figma.com/design/mgEQ62g97xjVnrC0nwjU6h/Barnvest?node-id=0-1&t=HtZb4aQLHpVRYBnV-1",
-      poster:  "barnvestthumb.png"
+      poster:  "barnvestthumbnail.jpg"
     },
     {
       title: "WordPress",
