@@ -34,14 +34,14 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
       </div>
       <div className='work-video'>
         <video
-          src={process.env.PUBLIC_URL + videoSrc}
+          src={videoSrc}
           loop
           muted
           ref={videoRef}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           playsInline
-          poster={process.env.PUBLIC_URL + poster}
+          poster={poster}
           className={isPlaying ? 'playing' : ''}
           onClick={handlePlayVideo}
           controls={isPlaying}
@@ -62,35 +62,35 @@ const WorkSection = () => {
     {
       title: "UI/UX",
       subtitle: "User Interface of BarnVest App",
-      videoSrc: "/Barnvest2.mp4",
+      videoSrc: process.env.PUBLIC_URL + "/Barnvest2.mp4",
       description: "For this project, We collaborated with Roland, a client based in Nigeria, to design the user interface for Barnvest, an innovative e-commerce app. Barnvest is a platform that facilitates the seamless buying and selling of goods, aiming to provide users with an intuitive and efficient shopping experience.",
       client: "Roland, Nigeria",
       tools: "Figma",
       imageSrc: "teamwork.png",
       link: "https://www.figma.com/design/mgEQ62g97xjVnrC0nwjU6h/Barnvest?node-id=0-1&t=HtZb4aQLHpVRYBnV-1",
-      poster: "barnvestthumb.png"
+      poster: process.env.PUBLIC_URL + "/barnvestthumb.png"
     },
     {
       title: "WordPress",
       subtitle: "Wordpress Development of Castle&Co",
-      videoSrc: "/Castleco2.mp4",
+      videoSrc: process.env.PUBLIC_URL + "/Castleco2.mp4",
       description: "For this project, We collaborated with Christian, a client based in United States, to develop the wordpress site for Castel&Co, an innovative e-commerce app. Castle&Co is a platform that facilitates the seamless selling of Rugs, aiming to provide users with an intuitive and efficient shopping experience.",
       client: "Christian, United States",
       tools: "WordPress, PHP",
       imageSrc: "wordpress.png",
       link: "https://castelandco.com.au/",
-      poster: "castelandcothumb.png"
+      poster: process.env.PUBLIC_URL + "/castelandcothumb.png"
     },
     {
       title: "React.js",
       subtitle: "React.js Development of Probsolz",
-      videoSrc: "/Probsolz2.mp4",
+      videoSrc: process.env.PUBLIC_URL + "/Probsolz2.mp4",
       description: "Description for React.js project.",
       client: "Client C",
       tools: "React, JavaScript",
       imageSrc: "react.png",
       link: "http://example.com",
-      poster: "probthumb.png"
+      poster: process.env.PUBLIC_URL + "/probthumb.png"
     }
   ];
 
