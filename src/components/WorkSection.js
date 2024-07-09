@@ -41,10 +41,11 @@ const WorkItem = ({ title, subtitle, videoSrc, reverse, poster, onClick }) => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           playsInline
-          poster={poster}
+          
           className={isPlaying ? 'playing' : ''}
           onClick={handlePlayVideo}
           controls={isPlaying}
+          poster={poster}
         />
         {!isPlaying && (
           <div className="play-button" onClick={handlePlayVideo}>
@@ -68,7 +69,7 @@ const WorkSection = () => {
       tools: "Figma",
       imageSrc: "teamwork.png",
       link: "https://www.figma.com/design/mgEQ62g97xjVnrC0nwjU6h/Barnvest?node-id=0-1&t=HtZb4aQLHpVRYBnV-1",
-      poster:  "public/barnvestthumb.PNG"
+      poster:  "barnvestthumb.PNG"
     },
     {
       title: "WordPress",
